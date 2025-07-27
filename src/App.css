@@ -1,0 +1,73 @@
+/* App.css */
+/* Centering the app content */
+.app-container{
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  position:relative;
+  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Style the background video*/
+.background-video{
+  height:100vh;
+  width:100vw;
+  left:0;
+  top:0;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+/* Style the heading*/
+.counter-heading{
+  text-align:center;
+  font-size:2rem;
+  font-weight:bold;
+  color: white;
+ margin: 50px 20px;
+  z-index: 1;
+}
+/* Style the buttons container*/
+.button-container{
+  display:flex;
+  gap:10px;
+  position:absolute;
+  z-index: 1;
+ margin-top: 10rem; 
+}
+/*Style for buttons*/
+.counter-button{
+  background-color: #007bff;
+  color:white ;
+  padding: 10px 20px;
+  font-size:1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+/*Hover Effect for buttons*/
+
+.counter-button:hover{
+  background-color: #0056b3 ;
+
+}
+.counter-button:active{
+  background-color:#004085;
+}
+@media (min-aspect-ratio : 16/9){
+  .background-video{
+    width:100%;
+    height:auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .background-video{
+    width:auto;
+    height:100;
+  }
+}
